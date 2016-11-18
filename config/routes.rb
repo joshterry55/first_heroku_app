@@ -13,6 +13,7 @@
 #
 
 Rails.application.routes.draw do
+  mount Attachinary::Engine => "/attachinary"
   root 'cats#index'
   devise_for :users, controllers: {
       registrations: 'users/registrations'
