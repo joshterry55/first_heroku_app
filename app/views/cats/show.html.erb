@@ -1,6 +1,6 @@
 <h1><%= @cat.name %></h1>
 <% if @cat.picture? %>
-  <%= cl_image_tag(@cat.picture.path, { size: '150x150', crop: :thumb}) %>
+  <%= cl_image_tag(@cat.picture.path, { size: '50x50', crop: :thumb, gravity: :face }) %>
 <% end %>
 
 
